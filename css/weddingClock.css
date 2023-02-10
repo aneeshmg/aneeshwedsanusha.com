@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Text+Me+One);
+
+
+
+.clock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.bgLayer {
+    position: relative;
+}
+
+
+.text {
+    position: absolute;
+    top: 2vh;
+    left: 4.8vh;
+    width: 100px;
+    height: 100px;
+    color: #550f33;
+}
+
+.val {
+    font-family: 'Text Me One', cursive;
+    font-size: 5.5vh;
+    color:#a148c9;
+    text-align: center;
+    line-height: 2vh;
+    width: 100px;
+}
+
+.type_days {
+    font-family: 'Text Me One', cursive;
+    color: #550f33;
+    width:100px;
+    text-align: center;
+    font-size: 2.3vh;
+    text-transform: uppercase;
+}
+
+.type_hours {
+    font-family: 'Text Me One', cursive;
+    color:#550f33;
+    width:100px;
+    text-align:center;
+    font-size:2.3vh;
+    text-transform:uppercase;
+}
+
+.type_minutes {
+    font-family: 'Text Me One', cursive;
+    color:#550f33;
+    width:100px;
+    text-align:center;
+    font-size:2.3vh;
+    text-transform:uppercase;
+}
+
+.type_seconds {
+    font-family: 'Text Me One', cursive;
+    color:#550f33;
+    width:100px;
+    text-align:center;
+    font-size:2.3vh;
+    text-transform:uppercase;
+}
