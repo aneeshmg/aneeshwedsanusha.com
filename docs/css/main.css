@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+body {
+    background-color: #e9bab4;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header {
+    background-color: #550f33;
+    margin-top: -7.5vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 8vh;
+    padding-left: 1.3vw;
+    padding-right: 1.3vw;
+    color: #e9bab4;
+}
+
+h3 {
+    margin-top: -4vh;
+    font-size: 3vh;
+    font-family: 'Comfortaa', cursive;
+    color: #550f33;
+}
+
+h4 {
+    font-size: 2vh;
+    font-family: 'Comfortaa', cursive;
+    color: #550f33;
+}
+
+hr {
+    border: 1px dotted #550f33;
+    border-radius: 30px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#gallery, #youtube {
+    padding: 1%;
+    width: 45%;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 11vh;
+    }
+    .bottom-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #e9bab4;
+        border: 2vw solid #550f33;
+    }
+    #gallery, #youtube {
+        padding: 1%;
+        width: 98%;
+    }
+}
