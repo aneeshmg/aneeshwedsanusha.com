@@ -1,6 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Text+Me+One);
-
-
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
 
 .clock {
     display: flex;
@@ -27,7 +25,7 @@
 }
 
 .val {
-    font-family: 'Text Me One', cursive;
+    font-family: 'Text Me One', sans-serif;
     font-size: 5.5vh;
     color:#a148c9;
     text-align: center;
@@ -36,7 +34,7 @@
 }
 
 .type_days {
-    font-family: 'Text Me One', cursive;
+    font-family: 'Text Me One', sans-serif;
     color: #550f33;
     width:100px;
     text-align: center;
@@ -45,7 +43,7 @@
 }
 
 .type_hours {
-    font-family: 'Text Me One', cursive;
+    font-family: 'Text Me One', sans-serif;
     color:#550f33;
     width:100px;
     text-align:center;
@@ -54,7 +52,7 @@
 }
 
 .type_minutes {
-    font-family: 'Text Me One', cursive;
+    font-family: 'Text Me One', sans-serif;
     color:#550f33;
     width:100px;
     text-align:center;
@@ -63,7 +61,7 @@
 }
 
 .type_seconds {
-    font-family: 'Text Me One', cursive;
+    font-family: 'Text Me One', sans-serif;
     color:#550f33;
     width:100px;
     text-align:center;
