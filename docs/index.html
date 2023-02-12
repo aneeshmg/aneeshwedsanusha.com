@@ -13,7 +13,7 @@
         <meta name="revisit-after" content="7 days" />
         <meta http-equiv="cache-control" content="max-age=2" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <meta http-equiv="Content-Security-Policy" content="default-src *; img-src https://*;" />
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; img-src https://*;" />
 
         <link rel="author" href="humans.txt" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -25,7 +25,7 @@
 
         <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
         <link rel="stylesheet" href="css/weddingClock.css" type="text/css" media="all" />
-        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css" integrity="sha512-bjwk1c6AQQOi6kaFhKNrqoCNLHpq8PT+I42jY/il3r5Ho/Wd+QUT6Pf3WGZa/BwSdRSIjVGBsPtPPo95gt/SLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script type="text/javascript" src="js/weddingClock.js"></script>
         <script type="text/javascript">
             weddingCountdown({
@@ -42,7 +42,8 @@
                 now : Math.floor(Date.now() / 1000)
             });
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.slim.min.js" integrity="sha512-jxwTCbLJmXPnV277CvAjAcWAjURzpephk0f0nO2lwsvcoDMqBdy1rh1jEwWWTabX1+Grdmj9GFAgtN22zrV0KQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js" integrity="sha512-cWEytOR8S4v/Sd3G5P1Yb7NbYgF1YAUzlg1/XpDuouZVo3FEiMXbeWh4zewcYu/sXYQR5PgYLRbhf18X/0vpRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
         <header>
