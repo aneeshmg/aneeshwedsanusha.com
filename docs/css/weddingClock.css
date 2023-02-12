@@ -33,38 +33,11 @@
     width: 100px;
 }
 
-.type_days {
+.type_days, .type_hours, .type_minutes, .type_seconds {
     font-family: 'Text Me One', sans-serif;
     color: #550f33;
     width:100px;
     text-align: center;
     font-size: 2.3vh;
     text-transform: uppercase;
-}
-
-.type_hours {
-    font-family: 'Text Me One', sans-serif;
-    color:#550f33;
-    width:100px;
-    text-align:center;
-    font-size:2.3vh;
-    text-transform:uppercase;
-}
-
-.type_minutes {
-    font-family: 'Text Me One', sans-serif;
-    color:#550f33;
-    width:100px;
-    text-align:center;
-    font-size:2.3vh;
-    text-transform:uppercase;
-}
-
-.type_seconds {
-    font-family: 'Text Me One', sans-serif;
-    color:#550f33;
-    width:100px;
-    text-align:center;
-    font-size:2.3vh;
-    text-transform:uppercase;
 }
