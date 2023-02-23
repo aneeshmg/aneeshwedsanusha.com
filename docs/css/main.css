@@ -5,6 +5,10 @@ body {
     background-color: #e9bab4;
     margin-left: 0;
     margin-right: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 header {
@@ -23,9 +27,6 @@ header {
 h1, h2 {
     font-family: 'Tangerine', cursive;
     text-align: center;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     font-weight: normal;
 }
 
@@ -47,6 +48,7 @@ h4 {
     font-size: 2vh;
     font-family: 'Comfortaa', cursive;
     color: #550f33;
+    margin-top: -1.5vh;
 }
 
 hr {
@@ -59,6 +61,38 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+    margin-top: -1vh;
+}
+
+.locations-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.locations-box section {
+    display: flex;
+    width: 30%;
+    padding-top: 1vh;
+}
+
+.locations-box section a, .locations-box section h4 {
+    font-size: 2vh;
+    font-family: 'Comfortaa';
+    color: #550f33;
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Comfortaa';
+    color: #550f33;
+    margin-top: -3vh;
+}
+
+footer h5 a:link {
+    color:#550f33;
 }
 
 #gallery, #youtube {
@@ -81,5 +115,20 @@ hr {
     #gallery, #youtube {
         padding: 1%;
         width: 98%;
+    }
+    .locations-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 2vw solid #550f33;
+        margin-bottom: 1.5vh;
+    }
+    .locations-box section {
+        display: flex;
+        width: 95%;
+        padding-top: 2vh;
+    }
+    footer {
+        margin-top: 0;
     }
 }
