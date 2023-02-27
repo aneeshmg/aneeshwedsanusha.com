@@ -27,26 +27,6 @@
         <link rel="stylesheet" href="css/weddingClock.css" type="text/css" media="all" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css" integrity="sha512-bjwk1c6AQQOi6kaFhKNrqoCNLHpq8PT+I42jY/il3r5Ho/Wd+QUT6Pf3WGZa/BwSdRSIjVGBsPtPPo95gt/SLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/weddingClock.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                setInterval(() => window.location.reload(true), 1000 * 60 * 60 * 6)
-                
-                weddingCountdown({
-                    secondsColor : "#550f33",
-                    secondsGlow  : "none",
-                    minutesColor : "#550f33",
-                    minutesGlow  : "none",
-                    hoursColor   : "#550f33",
-                    hoursGlow    : "none",
-                    daysColor    : "#550f33",
-                    daysGlow     : "none",
-                    startDate   : "1675652400",
-                    endDate     : "1677639600",
-                    now : Math.floor(Date.now() / 1000)
-                })
-            })
-        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js" integrity="sha512-cWEytOR8S4v/Sd3G5P1Yb7NbYgF1YAUzlg1/XpDuouZVo3FEiMXbeWh4zewcYu/sXYQR5PgYLRbhf18X/0vpRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body oncontextmenu="return false;">
@@ -55,45 +35,12 @@
         </header>
         <div class="wrapper">
 
-            <h3>We will be live in:</h3>
+            <h3>Watch Live:</h3>
 
-            <div class="clock">
-                <div class="clock_days">
-                    <div class="bgLayer">
-                        <canvas id="canvas_days" width="188" height="188"></canvas>
-                        <div class="text">
-                            <p class="val">0</p>
-                            <p class="type_days">Days</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="clock_hours">
-                    <div class="bgLayer">
-                        <canvas id="canvas_hours" width="188" height="188"></canvas>
-                        <div class="text">
-                            <p class="val">0</p>
-                            <p class="type_hours">Hours</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="clock_minutes">
-                    <div class="bgLayer">
-                        <canvas id="canvas_minutes" width="188" height="188"></canvas>
-                        <div class="text">
-                            <p class="val">0</p>
-                            <p class="type_minutes">Minutes</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="clock_seconds">
-                    <div class="bgLayer">
-                        <canvas id="canvas_seconds" width="188" height="188"></canvas>
-                        <div class="text">
-                            <p class="val">0</p>
-                            <p class="type_seconds">Seconds</p>
-                        </div>
-                    </div>
-                </div>
+            <div id="main-video" class="fotorama">
+                <a href="https://www.youtube.com/watch?v=6lLWRfWqQq4">
+                    <img src="https://ucarecdn.com/0782f772-361a-4158-9354-ec2204185c90/-/preview/-/quality/smart/-/format/auto/" alt="A PreWedding pic at The Kantara House">
+                </a>
             </div>
 
             <hr>
@@ -107,7 +54,31 @@
                 </section>
             </div>
 
-            <h4>Meanwhile, here are some pictures and the video from our engagement ceremony:</h4>
+            <h4><b>Pre Wedding Assortment:</b></h4>
+
+            <div class="bottom-container">
+                <div id="youtube" class="fotorama" >
+                    <a href="https://www.youtube.com/watch?v=Gr9B5SX0d4g">
+                        <img src="https://ucarecdn.com/ab224622-ff44-4759-be46-80e5abda01d9/-/preview/-/quality/smart/-/format/auto/" alt="The Kantara House">
+                    </a>
+                </div>
+                <div id="gallery" class="fotorama" data-allowfullscreen="true" data-loop="true" data-autoplay="true" 
+                data-transition="slide" data-clicktransition="crossfade" data-shuffle="true">
+                    <!-- gallery -->
+                    <img src="https://ucarecdn.com/0782f772-361a-4158-9354-ec2204185c90/-/preview/-/quality/smart/-/format/auto/" 
+                        data-caption="A Pre-wedding pic at The Kantara house" alt="A Pre-wedding pic at The Kantara house">
+                    <img src="https://ucarecdn.com/acf9684e-6ee1-4390-90c8-88e9124fa1a0/-/preview/-/quality/smart/-/format/auto/" 
+                        data-caption="A Pre-wedding pic at The Beach" alt="A Pre-wedding pic at The Beach">
+                    <img src="https://ucarecdn.com/7e1e3378-5144-4ede-935e-bf6a4719808c/-/preview/-/quality/smart/-/format/auto/" 
+                        data-caption="A Pre-wedding pic at The Beach" alt="A Pre-wedding pic at The Kantara house">
+                    <img src="https://ucarecdn.com/f4282fb7-7557-4d4d-8c1f-b314f0e53dd0/-/preview/-/quality/smart/-/format/auto/" 
+                        data-caption="A Pre-wedding pic at The Beach" alt="A Pre-wedding pic at The Beach">
+                    <img src="https://ucarecdn.com/ab224622-ff44-4759-be46-80e5abda01d9/-/preview/-/quality/smart/-/format/auto/" 
+                        data-caption="A Pre-wedding pic at The Beach" alt="A Pre-wedding pic at The Kantara house">
+                </div>
+            </div>
+
+            <h4><b>Our Engagement:</b></h4>
 
             <div class="bottom-container">
                 <div id="gallery" class="fotorama" data-allowfullscreen="true" data-loop="true" data-autoplay="true" 
@@ -141,10 +112,6 @@
                         data-caption="The Couple With Their Parents" alt="The Couple With Their Parents">
                     <img src="https://ucarecdn.com/61a65d5d-92db-4c3d-b06c-67b4d563a23b/-/preview/-/quality/smart/-/format/auto/" 
                         data-caption="The Rings" alt="The Rings">
-                    <img src="https://ucarecdn.com/0782f772-361a-4158-9354-ec2204185c90/-/preview/-/quality/smart/-/format/auto/" 
-                        data-caption="A Pre-wedding pic at The Kantara house" alt="A Pre-wedding pic at The Kantara houses">
-                    <img src="https://ucarecdn.com/acf9684e-6ee1-4390-90c8-88e9124fa1a0/-/preview/-/quality/smart/-/format/auto/" 
-                        data-caption="A Pre-wedding pic at The Beach" alt="A Pre-wedding pic at The Beach">
                 </div>
                 <div id="youtube" class="fotorama" >
                     <a href="https://www.youtube.com/watch?v=kihqyUk11iE">
@@ -152,6 +119,7 @@
                     </a>
                 </div>
             </div>
+
         </div>
         <footer>
             <h5>&copy;&nbsp;2023 &nbsp;|&nbsp;<a href="https://aneeshmg.com" target="_blank">aneeshmg.com</a></h5>
